@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.aavdeev.trafficlight.MainActivity"
+    android:background="@color/redColor">
+
+    <Button
+        android:text="@string/red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp"
+        android:id="@+id/buttonRed"
+        android:onClick="onRedButtonClick"/>
+
+
+    <Button
+        android:text="@string/yellow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:id="@+id/buttonYellow"
+        android:layout_below="@+id/buttonRed"
+        android:layout_alignLeft="@+id/buttonRed"
+        android:layout_alignStart="@+id/buttonRed"
+        android:layout_alignRight="@+id/buttonRed"
+        android:layout_alignEnd="@+id/buttonRed"
+        android:onClick="onYellowButtonClick"/>
+
+    <Button
+        android:text="@string/green"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonGreen"
+        android:layout_below="@+id/buttonYellow"
+        android:layout_alignLeft="@+id/buttonYellow"
+        android:layout_alignStart="@+id/buttonYellow"
+        android:layout_marginTop="18dp"
+        android:layout_alignRight="@+id/buttonRed"
+        android:layout_alignEnd="@+id/buttonRed"
+        android:onClick="onGreenButtonClick"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/red"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>
