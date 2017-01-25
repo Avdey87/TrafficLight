@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
-
+ 
     public void onRedButtonClick(View view) {
         mInfoTextView.setText(R.string.red);
         mRelativeLayout.setBackgroundColor(ContextCompat.getColor(MainActivity.this, R.color.redColor));
